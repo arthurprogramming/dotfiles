@@ -48,7 +48,15 @@ set t_Co=256
 "No backup files
 set nobackup
 set nowritebackup
-set noswapfile
+
+"set noswapfile
+set directory=$HOME/.vim/swap//
+
+"Persistent undo
+set undofile                " Save undos after file closes
+set undodir=~/.vim/undo     " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
 
 "Search
 set hlsearch
@@ -80,6 +88,7 @@ let g:netrw_winsie = 25
  set t_BE = 
 
 """Mappings"""
+let mapleader = " "
 "Vertical Explorer
 nnoremap <leader>e :Vex<CR>
 "Enclose word with single quotes
