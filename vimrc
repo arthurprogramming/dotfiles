@@ -30,6 +30,10 @@ filetype plugin indent on
 "Enable syntax
 syntax on
 
+"Interactive terminal
+"Needed if you want your bashrc to be loaded
+set shellcmdflag=-ic
+
 "No Wrap
 set nowrap
 
